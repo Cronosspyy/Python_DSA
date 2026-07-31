@@ -1,0 +1,14 @@
+class Node:
+    def __init__(self,value):
+        self.value=value
+        self.head=None
+
+class LinkedList:
+    def __init__(self,value):
+        new_node = Node(value) #yeh value node me jaegi 
+        self.head = new_node # head ko new node pr point kr rhe hai 
+        self.tail = new_node 
+        self.lenght = 1
+        
+linkedlist_obj1 = LinkedList(4)
+print(linkedlist_obj1.head.value) #value fetch kr rhe h using header kyuki 1st element h 
